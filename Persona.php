@@ -16,5 +16,18 @@ class Persona
     {
         return "$this->nombre ($this->edad) [$this->colorFavorito]";
     }
+
+    public function RestanteHastaElSiglo() : string
+    {
+        if ($this->edad >= 100)
+        {
+            return "¡Enhorabuena! ¡Por otros cien!";
+        }
+        else
+        {
+            $restanteHastaElSiglo = 100 - $this->edad;
+            return "Te quedan $restanteHastaElSiglo para cumplir 100. ¡Sigue cuidándote!";
+        }
+    }
 }
 ?>
