@@ -16,3 +16,7 @@
     $usuario = new Persona($nombre, $edad, $listaDeColores[$posicionDelColor]);
     echo $usuario->PersonaATexto();
 ?>
+<br/>
+<?php
+    echo $usuario->RestanteHastaElSiglo();
+?>
