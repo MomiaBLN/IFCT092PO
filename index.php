@@ -1,9 +1,17 @@
-<?php
-require('plantillas/head.php');
-require('plantillas/body.php');
-//require('colecciones.php');
-//require('producto.php');
-//require('verdura.php');
-require('Persona.php');
-require('Formulario.php');
-?>
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>¡Lotería!</title>
+</head>
+<body>
+    <h1>
+        <?php
+        echo "¡Lotería!";
+        ?>
+    </h1>
+    <?php
+    require('formulario.php');
+    ?>
+</body>
+</html>

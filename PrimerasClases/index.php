@@ -1,0 +1,9 @@
+<?php
+require('plantillas/head.php');
+require('plantillas/body.php');
+//require('colecciones.php');
+//require('producto.php');
+//require('verdura.php');
+require('Persona.php');
+require('Formulario.php');
+?>
