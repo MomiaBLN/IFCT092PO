@@ -13,15 +13,7 @@
                          $numero4,
                          $numero5);
 
-    echo $cupon->CuponATexto();
-    echo "<br/>";
-
     $cuponGanador = $cupon->CrearCuponAleatorio();
-
-    echo $cupon->CuponATexto();
-    echo "<br/>";
-    echo $cuponGanador->CuponATexto();
-    echo "<br/>";
 
     if ($cuponGanador->CompararCupones($cupon))
     {
