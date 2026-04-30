@@ -22,7 +22,7 @@
         }
         else
         {
-            echo "¡Hola! </br>";
+            echo "¡Hola, $nombreDeUsuario! </br>";
         }
 
         $miEdad = 37;

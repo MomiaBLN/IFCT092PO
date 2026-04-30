@@ -2,16 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>¡Lotería!</title>
+    <title>Tablas salariales en tecnología</title>
 </head>
 <body>
-    <h1>
-        <?php
-        echo "¡Lotería!";
-        ?>
-    </h1>
-    <?php
-    require('formulario.php');
-    ?>
+    <h1>Descubre el salario asignado por convenio según tu categoría</h1>
+    <?php require('formulario.php'); ?>
 </body>
 </html>

@@ -21,7 +21,7 @@ class Persona
     {
         if ($this->edad >= 100)
         {
-            return "¡Enhorabuena! ¡Por otros cien!";
+            return '¡Enhorabuena! ¡Por otros cien!';
         }
         else
         {
