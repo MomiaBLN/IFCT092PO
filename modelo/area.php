@@ -13,4 +13,5 @@ class Area
         return $this->id == $otraArea->id;
     }
 }
+
 ?>

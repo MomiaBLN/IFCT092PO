@@ -6,6 +6,6 @@
 </head>
 <body>
     <h1>Descubre el salario asignado por convenio según tu categoría</h1>
-    <?php require('formulario.php'); ?>
+    <?php require('vista/formulario.php'); ?>
 </body>
 </html>
