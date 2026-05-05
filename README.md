@@ -17,14 +17,14 @@ Como segundo paso vimos cómo modificar el comportamiento de nuestro código con
 [WIP]
 
 #### Palabras clave
-Indicadas al principio de la línea, utilizaremos distintas palabras para indicar que empieza 
+Indicadas al principio de la línea, utilizaremos distintas palabras para indicar que empieza una parte especial de nuetro código. Si sabes inglés, no te sorprenderán que las palabras utilizas sean:
 
-if
-else if
-else
+* if, que significa "si" en inglés,
+* else if, que significa "o si", y
+* else, que significa "si no".
 
 #### Comparación
-
+Después de las palabras clave, entre paréntesis, encontraremos la parte del código que se evalua para decidir si ejecutar o no el siguiente bloque. En ese lugar debe indicarse siempre verdadero o falso y, por norma general, veremos comparaciones o fórmulas algo más complejas.
 
 #### Bloque de código
 Podemos aglutinar varias líneas de código en un mismo bloque usando '{' y '}' de manera que todo el código que quede en medio forme un único bloque. Si dicho bloque viene precedido de una condición indicada correctamente, sólo se ejecutará cuando se cumpla la condición.
@@ -32,6 +32,6 @@ Podemos aglutinar varias líneas de código en un mismo bloque usando '{' y '}' 
 ``` php
 if (true)
 {
-    echo "Como 1 no es igual a 0, esto nunca ocurrirá";
+    echo "Esto siempre se ejecutará";
 }
 ```
