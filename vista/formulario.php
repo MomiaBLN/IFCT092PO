@@ -1,53 +1,26 @@
-<?php
-require_once("modelo/area.php");
-require_once("modelo/grupo.php");
-require_once("modelo/nivel.php");
-require_once("modelo/categoria.php");
-require_once("modelo/datos-categorias.php");
-require_once("vista/plantillas/herramientas.php"); 
-?>
+<?php require_once("vista/plantillas/herramientas.php"); ?>
 
-<form action="index.php" method="GET">
+<form action="index.php" method="GET" name="formulario">
 <?php 
 $data = [
     "nombreDelMenuDesplegableParaMostrar" => "Área",
     "nombreInternoDelMenuDesplegable" => "area",
-    "listaDeElementosDelMenu" => [1, 2, 3, 4, 5, 6]
+    "listaDeElementosDelMenu" => $controlador->ObtenerAreasDisponibles()
 ];
 MostrarPlantilla("select", $data);
 $data = [
     "nombreDelMenuDesplegableParaMostrar" => "Grupo",
     "nombreInternoDelMenuDesplegable" => "grupo",
-    "listaDeElementosDelMenu" => ["A", "B", "C", "D", "E"]
+    "listaDeElementosDelMenu" => $controlador->ObtenerGruposDisponibles()
 ];
 MostrarPlantilla("select", $data);
 $data = [
     "nombreDelMenuDesplegableParaMostrar" => "Nivel",
     "nombreInternoDelMenuDesplegable" => "nivel",
-    "listaDeElementosDelMenu" => [1, 2, 3]
+    "listaDeElementosDelMenu" => $controlador->ObtenerNivelesDisponibles()
 ];
 MostrarPlantilla("select", $data);
  ?>
     <button type="submit">Consultar</button>
 </form>
-
-<?php
-if (!isset($_GET["area"])
-    || !isset($_GET["grupo"])
-    || !isset($_GET["nivel"]))
-{
-    return;
-}
-
-$valorArea = $_GET["area"];
-$valorGrupo = $_GET["grupo"];
-$valorNivel = $_GET["nivel"];
-
-echo "Área: $valorArea => Grupo: $valorGrupo => Nivel: $valorNivel";
-
-$areaConsulta = new Area($valorArea);
-$grupoConsulta = new Grupo($valorGrupo);
-$nivelConsulta = new Nivel($valorNivel);
-
-
-?>
+<?php echo $controlador->ConsultarSalario(); ?>

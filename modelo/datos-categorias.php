@@ -25,8 +25,11 @@ $listaDeNiveles =
 
 $listaDeCategorias =
 [
+    new Categoria($listaDeAreas[0], $listaDeGrupos[3], $listaDeNiveles[0], 20436.01),
+    new Categoria($listaDeAreas[0], $listaDeGrupos[2], $listaDeNiveles[0], 20436.01),
     new Categoria($listaDeAreas[2], $listaDeGrupos[3], $listaDeNiveles[0], 20436.01),
     new Categoria($listaDeAreas[2], $listaDeGrupos[3], $listaDeNiveles[1], 18917.21),
-    new Categoria($listaDeAreas[2], $listaDeGrupos[3], $listaDeNiveles[2], 18542.34)
+    new Categoria($listaDeAreas[2], $listaDeGrupos[3], $listaDeNiveles[2], 18542.34),
+    new Categoria($listaDeAreas[4], $listaDeGrupos[3], $listaDeNiveles[0], 20436.01)
 ];
 ?>
