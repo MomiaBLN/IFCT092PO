@@ -1,25 +1,26 @@
+<?php
+    //Modelo
+    require_once("model/personal-info.php");
+    require_once("model/skill.php");
+    require_once("model/experience.php");
+    require_once("model/curriculum.php");
+    require_once("model/model-data.php");
+
+    //Controlador
+    require_once("controller/curriculum-controller.php");
+    $controller = new CurriculumController($myCV);
+?>
+
 <!doctype html>
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Tablas salariales en tecnología</title>
+    <title>IvánCV</title>
 </head>
 <body>
-    <h1>Descubre el salario asignado por convenio según tu categoría</h1>
     <?php
-        //Modelo
-        require_once("modelo/area.php");
-        require_once("modelo/grupo.php");
-        require_once("modelo/nivel.php");
-        require_once("modelo/categoria.php");
-        require_once("modelo/datos-categorias.php");
-
-        //Controlador
-        require_once("controlador/controlador-categorias.php");
-        $controlador = new ControladorCategorias($listaDeCategorias);
-
         //Vista
-        require_once('vista/formulario.php');
+        require_once("view/cv-page.php");
     ?>
 </body>
 </html>
