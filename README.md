@@ -8,5 +8,8 @@ Para Visual Studio Code: https://code.visualstudio.com/download
 
 Y encuentra toda la documentación relacionada con php en su página web: https://www.php.net/manual/es/
 
->[!Tip]
+>[!Important]
 >Echa un vistazo a las ramas del proyecto para volver a versiones anteriores con el código de cada momento del curso y ponte en contacto conmigo si echas alguna en falta (por favor, ten en cuenta que por diversos motivos puede que tarde en contestar o actualizar).
+
+>[!Tip]
+>Encuentra ayuda en estos recursos de aprendizaje: https://www.w3schools.com/php/ - https://www.codingame.com/start/
