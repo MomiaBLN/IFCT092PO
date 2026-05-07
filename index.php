@@ -1,25 +1,11 @@
-<!doctype html>
-<html lang="es">
-<head>
-    <meta charset="utf-8">
-    <title>Tablas salariales en tecnología</title>
-</head>
-<body>
-    <h1>Descubre el salario asignado por convenio según tu categoría</h1>
-    <?php
-        //Modelo
-        require_once("modelo/area.php");
-        require_once("modelo/grupo.php");
-        require_once("modelo/nivel.php");
-        require_once("modelo/categoria.php");
-        require_once("modelo/datos-categorias.php");
+<?php
+require_once ("constants.php");
+require_once ("movie-controller.php");
+?>
 
-        //Controlador
-        require_once("controlador/controlador-categorias.php");
-        $controlador = new ControladorCategorias($listaDeCategorias);
 
-        //Vista
-        require_once('vista/formulario.php');
-    ?>
-</body>
-</html>
+<h1><?php echo $title;?></h1>
+<p><?php echo "Estreno el día $release_date";?></p>
+<br/>
+<img src=<?php echo $poster_url;?> alt="Poster de <?php echo $title;?>" height="256">
+<p><?php echo $overview;?></p>
