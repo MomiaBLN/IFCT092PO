@@ -19,5 +19,10 @@ class Libro
         $this->autor = $autor;
         $this->fechaDePublicacion = $fechaDePublicacion;
     }
+
+    public function FechaDePublicacionATexto() : string
+    {
+        return $this->fechaDePublicacion->format("%d/%m/%Y");
+    }
 }
 ?>
