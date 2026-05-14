@@ -22,7 +22,7 @@ class Libro
 
     public function FechaDePublicacionATexto() : string
     {
-        return $this->fechaDePublicacion->format("%d/%m/%Y");
+        return $this->fechaDePublicacion->format("d/m/Y");
     }
 }
 ?>

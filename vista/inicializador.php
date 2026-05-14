@@ -1,0 +1,9 @@
+    <?php
+    //Vista
+    require_once('vista/libros/devolver.php');
+    require_once('vista/historial/reservar.php');
+    require_once('vista/libros/insertar.php');
+    require_once('vista/usuarios/insertar.php');
+    require_once('vista/libros/consultar.php');
+    require_once('vista/libros/mostrar-lista.php');
+    ?>

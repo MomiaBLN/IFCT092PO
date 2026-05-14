@@ -8,7 +8,16 @@ function MostrarInputText(string $nombre,
     $espacioPosterior = "<br><br>";
     echo $etiqueta.$input.$espacioPosterior;
 }
-function MostrarInputDateTime(string $nombre,
+function MostrarInputNumero(string $nombre,
+                            string $nombreParaMostrar,
+                            string $id)
+{
+    $etiqueta = "<label for=\"$id\">$nombreParaMostrar: </label>";
+    $input = "<input type=\"number\" id=\"$id\" name=\"$nombre\">";
+    $espacioPosterior = "<br><br>";
+    echo $etiqueta.$input.$espacioPosterior;
+}
+function MostrarInputDate(string $nombre,
                             string $nombreParaMostrar,
                             string $id)
 {
