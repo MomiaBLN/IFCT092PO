@@ -13,3 +13,5 @@ Y encuentra toda la documentación relacionada con php en su página web: https:
 
 >[!Tip]
 >Encuentra ayuda en estos recursos de aprendizaje: https://www.w3schools.com/php/ - https://www.codingame.com/start/
+
+Para entrar en el servidor local ahora que utilizamos XAMPP usaremos la dirección 127.0.0.1
