@@ -1,13 +1,13 @@
 <?php
 class Libro
 {
-    public string $id;
+    public int $id;
     public string $isbn;
     public string $titulo;
     public string $autor;
     public DateTime $fechaDePublicacion;
 
-    public function __construct(string $id,
+    public function __construct(int $id,
                                 string $isbn,
                                 string $titulo,
                                 string $autor,

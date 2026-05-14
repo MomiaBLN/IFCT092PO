@@ -1,12 +1,13 @@
 <?php
 if(isset($_POST["titulo"]))
 {
-    $fecha = DateTime::createFromFormat( 'd/m/y', $_POST["fechaDePublicacion"]);
-    $libro = new Libro("", $_POST["isbn"], $_POST["titulo"], $_POST["autor"], $fecha);
+    $fecha = DateTime::createFromFormat( 'd/m/Y', $_POST["fechaDePublicacion"]);
+    $libro = new Libro(0, $_POST["isbn"], $_POST["titulo"], $_POST["autor"], $fecha);
     $insertadorDeLibros->InsertarLibro($libro);
 }
 ?>
 
+<h1>Añadir libro</h1>
 <form action="index.php" method="POST">
 <?php
 require_once("vista/plantillas/input.php");

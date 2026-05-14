@@ -11,6 +11,7 @@ if(isset($_POST["numeroDeIdentificacionPersonal"]))
 }
 ?>
 
+<h1>Nuevo usuario</h1>
 <form action="index.php" method="POST">
 <?php
 require_once("vista/plantillas/input.php");

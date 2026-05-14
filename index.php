@@ -9,6 +9,7 @@ require_once("modelo/historial-libro.php");
 //controlador
 require_once("controlador/insertador-libros.php");
 require_once("controlador/insertador-usuarios.php");
+require_once("controlador/reservador-libros.php");
 
 $dsn = 'mysql:host=localhost;dbname=biblioteca;charset=utf8mb4';
 $pdo = new PDO($dsn, "root", "", [
@@ -23,6 +24,10 @@ if (!isset($insertadorDeUsuarios))
 {
     $insertadorDeUsuarios = new InsertadorUsuarios($pdo);
 }
+if (!isset($reservadorDeLibros))
+{
+    $reservadorDeLibros = new ReservadorLibros($pdo);
+}
 ?>
 <!doctype html>
 <html lang="es">
@@ -34,9 +39,10 @@ if (!isset($insertadorDeUsuarios))
     <?php
     //Vista
     require_once('vista/insertar-libro.php');
-    
-    //La vista para insertar usuarios
     require_once('vista/insertar-usuario.php');
+
+    //La vista para mostrar la opción de reservar libros
+    require_once('vista/reservar-libros.php');
     ?>
 </body>
 </html>
