@@ -1,4 +1,3 @@
-# Mostrar toda la inforamción del libro, un botón para volver al catálogo   y un botón para reservar el libro (si está disponible)
 <?php
 require_once("controlador/libros/consultador.php");
 require_once("controlador/base-de-datos.php");
